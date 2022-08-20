@@ -41,6 +41,7 @@ img{
     object-fit: cover;
 }
 
+    /*--name--*/
 .name{
     display: flex;
     align-items: center;
@@ -69,6 +70,7 @@ img{
     margin: 0px 5px 0px 0px;
 }
 
+    /*--info--*/
 .info{
     display: flex;
     flex-direction: column;
@@ -88,17 +90,22 @@ img{
     margin: var(--spacing);
 }
 
-.info .explain{
-    border: none;
-}
-
 .info a{
     text-decoration: none;
     color: var(--yellow-color);
 }
 
-.info .number .fa-square-phone{
-    color: var(--white-color);
+.info .explain{
+    border: none;
+}
+
+.info .number a{
+    pointer-events: none;
+}
+
+.info .number img{
+    width: 25px;
+    height: 25px;
 }
 
 .info .kakao{
@@ -119,6 +126,7 @@ img{
     margin-right: 5px;
 }
 
+    /*--menu--*/
 .menu{
     display: flex;
     justify-content: center;
@@ -150,6 +158,7 @@ img{
         justify-content: space-between;
     }
 
+    /*--name--*/
     .name{
         display: flex;
         flex-direction: row;
@@ -159,10 +168,15 @@ img{
         font-size: var(--font-micro);
     }
 
+    /*--info--*/
     .info{
         display: flex;
         flex-direction: row;
         font-size: 5px;
+    }
+
+    .info .explain, .info .number .number_phone, .kakao .kakao_talk{
+        display: none;
     }
 
     .info .number{
@@ -170,6 +184,19 @@ img{
         margin-right: 5px;
         font-size: var(--font-micro);
         padding: 5px;
+    }
+
+    .info .number{
+        border: none;
+    }
+
+    .info .number a{
+        pointer-events: auto;
+    }
+
+    .info .number img{
+        width: 35px;
+        height: 35px;
     }
 
     .info .kakao{
@@ -182,10 +209,13 @@ img{
         margin-top: 1px;
     }
 
-    .info .explain, .info .number i, .kakao .kakao_talk{
-        display: none;
+    .info .kakao .kakao_img{
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
     }
 
+    /*--menu--*/
     .menu{
         width: 100%;
         height: 80%;
