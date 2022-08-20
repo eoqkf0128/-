@@ -168,6 +168,7 @@ img{
     .info .number{
         margin: 0;
         margin-right: 5px;
+        font-size: var(--font-micro);
         padding: 5px;
     }
 
