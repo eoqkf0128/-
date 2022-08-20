@@ -18,7 +18,7 @@
         --font-large:30px;
         --font-medium:25px;
         --font-small:20px;
-        --font-micro:15px;
+        --font-micro:13px;
         --font-thick: bold;
 }
 
@@ -165,13 +165,15 @@ img{
         font-size: 5px;
     }
 
-    .info .number {
-        font-size: var(--font-micro);
+    .info .number{
+        margin: 0;
+        margin-right: 5px;
+        padding: 5px;
     }
 
     .info .kakao{
         padding: 3px;
-        margin-left: 0;
+        margin: 0px 5px 0px 0px;
     }
 
     .info .kakao .kakao_opentalk{
@@ -179,7 +181,7 @@ img{
         margin-top: 1px;
     }
 
-    .info .explain, .kakao .kakao_talk{
+    .info .explain, .info .number i, .kakao .kakao_talk{
         display: none;
     }
 
