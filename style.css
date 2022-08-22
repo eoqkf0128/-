@@ -29,8 +29,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Noto Sans KR', sans-serif;
-}
+    font-family: 'Noto Sans KR', sans-serif;}
+    
 /*--header--*/
 .header{
     display: flex;
@@ -225,6 +225,20 @@
     border-radius: 15px;
     width: 400px;
     align-items: center;
+}
+
+.content .content_facilities .content_info .house img{
+    width: 250px;
+    height: 250px;
+}
+
+.content .content_facilities .content_info .house{
+}
+
+.content .content_facilities .content_info .house .fulloption{
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
 }
 
 /*--footer--*/
