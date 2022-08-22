@@ -165,7 +165,7 @@ img{
         margin: var(--padding);
         align-items: center;
         justify-content: flex-start;
-        font-size: var(--font-micro);
+        font-size: var(--font-small);
     }
 
     /*--info--*/
