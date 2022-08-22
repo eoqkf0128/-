@@ -252,7 +252,7 @@
     }
 
     .navbar_menu{
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
         width: 100%;
@@ -265,7 +265,7 @@
     }
 
     .navbar_icon{
-        display: flex;
+        display: none;
         justify-content: center;
         width: 100%;
         padding-bottom: 10px;
