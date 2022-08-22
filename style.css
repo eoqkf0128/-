@@ -228,8 +228,8 @@
 }
 
 .content .content_facilities .content_info .house img{
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
 }
 
 .content .content_facilities .content_info .house{
@@ -238,7 +238,7 @@
 .content .content_facilities .content_info .house .fulloption{
     display: flex;
     flex-direction: column;
-    margin-left: 80px;
+    margin-left: 30px;
 }
 
 /*--footer--*/
