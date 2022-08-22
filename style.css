@@ -42,7 +42,17 @@
     justify-content: center;
 }
 
-.header .header_text{
+.header_facility{
+    display: flex;
+    width: 100%;
+    height: 600px;
+    background-image: url(img/facility_bg.jpg);
+    background-size: cover !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_text{
     color: var(--white-color);
     font-weight: 600;
     font-size: 60px;
@@ -144,7 +154,7 @@
 .navbar_togglebtn{
     display: none;
     position: absolute;
-    right: 32px;
+    right: 20px;
     font-size: var(--font-medium);
     color: var(--white-color);
 }
@@ -244,6 +254,10 @@
 }
 
 @media screen and (max-width:1000px){
+    .header, .header_facility{
+        height: 400px;
+    }
+
     .navbar{
         display: flex;
         flex-direction: column;
