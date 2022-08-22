@@ -66,17 +66,13 @@
     list-style: none;
 }
 
-.navbar a{
-    text-decoration: none;
-    color: var(--white-color);
-}
-
 .navbar .navbar_logo{
     font-size: var(--font-small);
 }
 
 .navbar .navbar_logo a{
     display: flex;
+    text-decoration: none;
     align-items: center;
     color:var(--blue-light-color);
 }
@@ -86,18 +82,28 @@
     align-items: center;
 }
 
-.navbar .navbar_menu{
+.navbar_menu{
     display: flex;
     font-weight: var(--font-thick);
     font-size: var(--font-small);
+}
+
+.navbar .navbar_menu a{
+    text-decoration: none;
+    color: var(--white-color);
 }
 
 .navbar .navbar_menu li{
     margin-right: 15px;
 }
 
-.navbar .navbar_icon{
+.navbar_icon{
     display: flex;
+}
+
+.navbar .navbar_icon a{
+    text-decoration: none;
+    color: var(--white-color);
 }
 
 .navbar .navbar_icon img{
@@ -133,6 +139,14 @@
 
 .navbar .navbar_icon .navbar_icon_kakao .navbar_icon_kakao_talk{
     margin: var(--padding);
+}
+
+.navbar_togglebtn{
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: var(--font-small);
+    color: var(--white-color);
 }
 
 /*--content--*/
@@ -227,4 +241,75 @@
     font-size: var(--font-small);
     font-weight: var(--font-thick);
     margin-bottom: 15px;
+}
+
+@media screen and (max-width:1000px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px;
+    }
+
+    .navbar_menu{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 12px;
+        background-color: var(--blue-light-color);
+    }
+
+    .navbar .navbar_menu li{
+        margin-bottom: 25px;
+    }
+
+    .navbar_icon{
+        display: none;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 10px;
+        background-color: var(--blue-light-color);
+    }
+
+    .navbar .navbar_icon .navbar_icon_number .navbar_icon_number_call{
+        display: flex;
+    }
+
+    .navbar .navbar_icon .navbar_icon_number .navbar_icon_number_call img{
+        width: 35px;
+        height: 35px;
+    }
+
+    .navbar .navbar_icon .navbar_icon_number{
+        border: 0px;
+    }
+    
+    .navbar .navbar_icon .navbar_icon_number .navbar_icon_number_phone{
+        display: none;
+    }
+
+    .navbar .navbar_icon .navbar_icon_kakao{
+        background-color: var(--yellow-color);
+        border: 2px solid var(--yellow-color);
+    }
+
+    .navbar .navbar_icon .navbar_icon_kakao .navbar_icon_kakao_opentalk img{
+        display: flex;
+        width: 30px;
+        height: 30px;
+    }
+    
+    .navbar .navbar_icon .navbar_icon_kakao .navbar_icon_kakao_opentalk .navbar_icon_kakao_talk{
+        display: none;
+    }
+
+    .navbar_togglebtn{
+        display: block;
+    }
+
+    .navbar_menu.active,
+    .navbar_icon.active{
+        display: flex;
+    }
 }
