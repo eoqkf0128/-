@@ -227,8 +227,8 @@ body{
 }
 
 .content .content_homearound img{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     margin-bottom: 20px;
 }
 
@@ -287,13 +287,15 @@ body{
     height: 200px;
 }
 
-.content .content_facilities .content_info .house{
+.content .content_facilities .content_info .house .long_house{
+    width: 230px;
+    height: 230px;
 }
 
 .content .content_facilities .content_info .house .fulloption{
     display: flex;
     flex-direction: column;
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 /*--footer--*/
