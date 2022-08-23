@@ -370,11 +370,15 @@ body{
         align-items: center;
         width: 100%;
         padding: 12px;
-        background-color: var(--blue-light-color);
+        background-color: rgba( 0, 0, 0, 0.9 );
     }
 
     .navbar .navbar_menu li{
         margin-bottom: 25px;
+    }
+
+    .navbar .navbar_menu .navbar_menu_location{
+        margin-bottom: 5px;
     }
 
     .navbar_icon{
