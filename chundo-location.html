@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>천도소개</title>
+    <title>오시는길</title>
     <script src="https://kit.fontawesome.com/250575c1f5.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,9 +14,9 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header_location">
         <h1 class="header_text">
-            천도소개
+            오시는길
         </h1>
     </header>
 
@@ -68,45 +68,40 @@
     <section class="content">
         <article class="content_greeting">
             <div class="content_header">
-                인사말
+                위치안내
             </div>
 
             <div class="content_info">
-                <h5>환영합니다</h5>
-                <br>임차인 및 예비 임차인 여러분 반갑습니다.</br>
-                <br> 저희 천도원룸은 임대인이 4층에 항상 거주하며 관리를 하고 있기 때문에 쾌적하고 깨끗한 환경을 유지하고 있습니다. 주위에 다양한 편의시설들이 있어 생활하기도 편리 하오니 언제든 편안하게 방문하셔서 상담하시고 결정하시길 바랍니다.</br>
-                <br>감사합니다</br>
+                <div class="map">
+                    <!-- * 카카오맵 - 지도퍼가기 -->
+                    <!-- 1. 지도 노드 -->
+                    <div id="daumRoughmapContainer1661225513489" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+                    <!--
+                        2. 설치 스크립트
+                        * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+                    -->
+                    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                    <!-- 3. 실행 스크립트 -->
+                    <script charset="UTF-8">
+                        new daum.roughmap.Lander({
+                            "timestamp" : "1661225513489",
+                            "key" : "2bgh8",
+                            "mapWidth" : "640",
+                            "mapHeight" : "360"
+                        }).render();
+                    </script>
+                </div>
             </div>
         </article>
 
-        <article class="content_facilities">
-            <div class="content_header">
-                부가시설 안내
-            </div>
-
-            <ul class="content_info">
-                <li class="elevator">
-                    <div class="combine">
-                        <img src="img/elevator.png" alt="">
-                        <div> - 엘리베이터</div>
-                    </div>
-                </li>
-
-                <li class="parkinglot">
-                    <div class="combine">
-                        <img src="img/parkinglot.png" alt="">
-                        <div> - 주차장</div>
-                    </div>
-                </li>
-
-                <li class="cctv">
-                    <div class="combine">
-                        <img src="img/CCTV.png" alt="">
-                        <div> - CCTV</div>
-                    </div>
-                </li>
-            </ul>
-        </article>
+        <div class="map_intro">
+            버스<br>
+            - 집 앞 정류장 하차 : 1723, 1733<br>
+            - 구. 언양 버스터미널 하차 : 327, 337, 357, 807, 1713<br>
+            - 임시 시외버스터미널 하차 : 2100, 3100 
+        </div>
     </section>
 
     <footer class="footer">
